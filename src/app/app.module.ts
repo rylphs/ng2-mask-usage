@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MaskModule } from 'ng2-mask';
 
 @NgModule({
   declarations: [
@@ -12,8 +13,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaskModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
