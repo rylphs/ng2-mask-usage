@@ -6,17 +6,15 @@ var SpecReporter = require('jasmine-spec-reporter');
 
 exports.config = {
   allScriptsTimeout: 11000,
-  firefoxPath: '/home/07125220690/apps/firefox48/firefox-bin', 
+  firefoxPath: '/home/07125220690/apps/firefox49/firefox', 
   specs: [
     './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'firefox',
-    firefoxPath: '/home/07125220690/apps/firefox48/firefox-bin',
-    'marionette': true,
-    'firefox_binary' : '/home/07125220690/apps/firefox48/firefox-bin'
+    marionette: true
   },
-  directConnect: true,
+  directConnect: false,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
